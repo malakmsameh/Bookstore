@@ -66,7 +66,7 @@ switch(num)
 // Q7
 let this_year = 2026
 
-let age = Number(prompt("please enter your year of birth:"))
+let age = Number(prompt("Q ->7 please enter your year of birth:"))
 
 if (age > 60)
 	alert("You may join the seniors' program.");
@@ -81,7 +81,7 @@ console.log(age);
 
 // Q8
 
-function swap(str)
+function to_up_low(str)
 {
 	let res = ""
 
@@ -96,12 +96,12 @@ function swap(str)
 
 	return res
 }
-console.log(swap(prompt("Q8 ->please enter a string:")))
+console.log(to_up_low(prompt("Q8 ->please enter a string:")))
 
 
 // Q9
 
-function camelCase(str) {
+function camel_case(str) {
 	let res = "";
 
 	for (let i = 0; i < str.length; i++)
@@ -112,4 +112,4 @@ function camelCase(str) {
 
 	return res;
 }
-console.log(camelCase("Coding Academy by Orange"));
+console.log(camel_case("Coding Academy by Orange"));
