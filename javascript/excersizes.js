@@ -57,6 +57,7 @@ console.log(typeof(9 != 11))
 // 7. "Orang" + "e"
 console.log("Orang" + "e")
 
+// console.log("check")
 
 // 8. "Orange" - "s"
 console.log("Orange" - "s")
