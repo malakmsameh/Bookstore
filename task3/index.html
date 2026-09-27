@@ -3,34 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>bookstore</title>
+	<title>Bookstore</title>
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<header>
 		<h1>Welcome to Our Community Bookstore</h1>
-		<p>Discover your next favorite read below!</p>
 	</header>
 
 	<main class="container">
 		<div class="card">
-			<h3>Fiction Masterpiece</h3>
-			<p>Genre: Fiction</p>
-			<p>Explore thrilling imaginary worlds and unforgettable characters.</p>
+			<h3>Borrow a Book</h3>
+			<form id="book-form">
+				<div class="form-style">
+					<label for="username">Username:</label><br>
+					<input class="input-style" type="text" id="username" required>
+				</div>
+				<div class="form-style">
+					<label for="membershipType">Membership -> student or regular:</label>
+					<br>
+					<input class="input-style" type="text" id="membershipType" required>
+				</div>
+				<div class="form-style">
+					<label for="bookGenre">Book Genre:</label><br>
+					<input class="input-style" type="text" id="bookGenre" required>
+				</div>
+				<div class="form-style">
+					<label for="bookTitle">Book Title:</label><br>
+					<input class="input-style" type="text" id="bookTitle" required>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
 		</div>
 
-		<div class="card">
-			<h3>Non-Fiction Insight</h3>
-			<p>Genre: Non-Fiction</p>
-			<p>Expand your knowledge with real-world histories and biographies.</p>
-		</div>
-
-		<div class="card">
-			<h3>Staff Pick</h3>
-			<p>Genre: Bestseller</p>
-			<p>Check out what our community readers are loving this month.</p>
+		<div class="card" id="result-card">
+			<p>Your details will appear here after you submit.</p>
 		</div>
 	</main>
+
 	<script src="./javascript/app.js"></script>
 </body>
 </html>
